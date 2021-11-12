@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+    <script src="node_modules/traceur/bin/traceur.js"></script>
+    <script src="node_modules/es6-module-loader/dist/es6-module-loader-dev.js"></script>
+  <style>
+#div1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+#div2{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 300px;
+}
+#div3{
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#mainDiv{
+text-align: center;
+margin-top: 150px;
+
+}
+.ic_bolme{
+
+float:left;
+width: 30px;
+/* border:#CCC solid 1px;  */
+margin-right: 200px;
+margin-left: 1px;
+font-size: 7vmax;
+
+}
+
+
+  </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+
+  <body>
+
+    <nav class="navbar navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: aliceblue; font-family:fantasy; font-size:xx-large;">Online Stopwatch</a>
+        <form class="d-flex" style="width: 60px; height: 60px;">
+          
+           <img src="https://miro.medium.com/fit/c/1360/1360/1*PEV6HA8VLXVSDwhhsqlzBA.jpeg" class="rounded float-end"> 
+        </form>
+      </div>
+    </nav>
+    
+
+    <div id = "mainDiv" class="container">
+
+
+      <table class="table table-secondary table-hover">
+        <tr> 
+            <td></td>
+        </tr>
+      <table>
+        <tr>
+          <td class="col-md-2"></td>
+          <td><div id="div3" class="ic_bolme" >0hr:</div></td>
+          <td><div id="div2" class="ic_bolme">0min:</div></td>
+          <td><div id = "div1" class="ic_bolme">0sec</div></td>
+        </tr>
+      </table>
+
+      <table class="table table-secondary table-hover">
+        <tr> 
+            <td></td>
+        </tr>
+
+      </table>
+      <table class="table table-dark table-hover">
+        <tr>
+          <td class="col-md-2"></td>
+          <td class="col-md-1"><button id= "startBtn" type="button" class="btn btn-success">
+            START
+          </button></td>
+          <td class="col-md-1"><button id="stopBtn" type="button" class="btn btn-danger">STOP</button>
+          </td>
+          <td class="col-md-2"></td>
+          <td class="col-md-1"><button id="resetBtn" type="button" class="btn btn-outline-light" >RESET</button>
+          </td>
+          <td class="col-md-5" ></td>
+        </tr>
+
+      </table>
+    
+</div>
+      <script>
+          System.import('src/app.js');
+      </script> 
+  </body>
+</html>
+
+
